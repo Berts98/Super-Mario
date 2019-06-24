@@ -3,6 +3,8 @@ guid: d2634a5d2cf4c6445bd99c497aca79f2
 TextureImporter:
   fileIDToRecycleName:
     21300000: backgrounds_0
+    21300002: backgrounds_1
+    21300004: backgrounds_2
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -100,6 +102,46 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4f77279439e9c9148b45dbb9ad41bc45
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgrounds_1
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 884
+        width: 79
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd7405354c3b32348b3727ad5f68b8c4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgrounds_2
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 799
+        width: 564
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb064cf62b8aadd45ae7ff116b5fd260
       vertices: []
       indices: 
       edges: []
