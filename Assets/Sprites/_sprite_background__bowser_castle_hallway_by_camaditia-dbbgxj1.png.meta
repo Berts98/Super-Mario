@@ -1,11 +1,7 @@
 fileFormatVersion: 2
-guid: d23a197a11e509b4a88b359a46db6820
+guid: 5d497e8bc7eb8414d9599c370570ace9
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: 4603_0
-    21300002: 4603_1
-    21300004: 4603_2
-    21300006: 4603_3
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -44,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -86,91 +82,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: 4603_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 108
-        width: 79
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1be54e42cba77cf4597403afa020e536
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 4603_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 75
-        width: 79
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b1b798f107430fd4aa894b77712e489d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 4603_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 42
-        width: 79
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 081b27afed426684695e7e29ed49de37
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 4603_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 9
-        width: 79
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a644129972158549994fb485ab96708
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8b5b91ed0a0bd25408cb94db2346bec7
+    spriteID: 
     vertices: []
     indices: 
     edges: []

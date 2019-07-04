@@ -10568,7 +10568,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1102934387}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.921, y: -0.7624902, z: -0.50500005}
+  m_LocalPosition: {x: -1.096, y: -0.7624902, z: -0.50500005}
   m_LocalScale: {x: 0.68132925, y: 0.477345, z: 1}
   m_Children: []
   m_Father: {fileID: 1890177942}
@@ -12074,10 +12074,10 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 3
-  m_firstOverflowCharacterIndex: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
-  m_isTextTruncated: 0
+  m_isTextTruncated: 1
   m_enableKerning: 1
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
@@ -12097,13 +12097,13 @@ MonoBehaviour:
   m_margin: {x: 6.2374544, y: 2.6258545, z: -2.735138, w: 0}
   m_textInfo:
     textComponent: {fileID: 1301570502}
-    characterCount: 0
+    characterCount: 147
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 0
+    spaceCount: 22
+    wordCount: 23
     linkCount: 0
-    lineCount: 0
-    pageCount: 0
+    lineCount: 7
+    pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
@@ -17019,7 +17019,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1883871953}
   m_LocalRotation: {x: -0, y: -0.006704643, z: -0, w: 0.9999775}
-  m_LocalPosition: {x: 0.21, y: 0.21624999, z: -0.89}
+  m_LocalPosition: {x: 0.21, y: 0.52, z: -0.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1990797816}
@@ -17041,7 +17041,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.015686274, g: 1, b: 0.80337656, a: 0}
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -17056,7 +17056,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1
+  orthographic size: 1.3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -17716,7 +17716,7 @@ MonoBehaviour:
   rb: {fileID: 1990797819}
   anim: {fileID: 1115810474}
   StartEdge: {x: -4, y: 0, z: 0}
-  EndEdge: {x: 11, y: 0, z: 0}
+  EndEdge: {x: 10.4, y: 0, z: 0}
 --- !u!61 &1990797818
 BoxCollider2D:
   m_ObjectHideFlags: 0
