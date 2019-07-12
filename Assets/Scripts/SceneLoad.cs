@@ -6,6 +6,11 @@ using UnityEngine.UI;
 
 public class SceneLoad : MonoBehaviour
 {
+    public void menu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
 	public void Level1()
     {
         SceneManager.LoadScene(1);

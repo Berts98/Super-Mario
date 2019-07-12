@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -8,6 +10,7 @@ public class Player : MonoBehaviour
     public int Life;
     public float MovementSpeed;
     public int Coins;
+    public int MaxCoins = 10;
     public float JumpForce;
     public bool isGrounded;
     public Rigidbody2D rb;
@@ -15,6 +18,10 @@ public class Player : MonoBehaviour
     bool isAlive = true;
     public Vector3 StartEdge;
     public Vector3 EndEdge;
+    public GameObject Toad;
+    public Text CoinValue;
+    public float Timer = 0f;
+    public float DeathTimer = 0f;
 
     // Update is called once per frame
     void Update()
@@ -23,6 +30,7 @@ public class Player : MonoBehaviour
         {
             CheckInput();
         }
+        victory();
     }
 
     /// <summary>
@@ -68,23 +76,21 @@ public class Player : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         isGrounded = true;
-        /*if (collision.gameObject.name == "StartEdge" && collision.gameObject.name == "EndEdge")
-        {
-            MovementSpeed = 0; 
-        }*/
     }
 
     public void Damage(int amount)
     {
         Life -= amount;
         if (Life <= 0)
+        {
             killMe();
+        }
     }
 
     public void Coin(int amount)
     {
         Coins += amount;
-
+        CoinValue.text = Coins.ToString();
     }
 
     public void killMe()
@@ -95,7 +101,31 @@ public class Player : MonoBehaviour
         }
         isAlive = false;
         anim.SetTrigger("Death");
+        DeathTimer += Time.deltaTime;
+        if (DeathTimer == 0.08f)
+        {
+            SceneManager.LoadScene(4);
+        }
         //Debug.Log("killMe");
     }
 
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "EndLevel" && Coins == MaxCoins && isGrounded == true)
+        {
+            Toad.SetActive(true);
+        }
+    }
+
+    public void victory()
+    {
+        if (Toad.activeSelf == true)
+        {
+            Timer += Time.deltaTime;
+            if (Timer == 0.12f)
+            {
+                SceneManager.LoadScene(3);
+            } 
+        }
+    }
 }
