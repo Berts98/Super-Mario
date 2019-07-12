@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
     public Text CoinValue;
     public float Timer = 0f;
     public float DeathTimer = 0f;
+    public Camera Cam;
 
     // Update is called once per frame
     void Update()
@@ -29,6 +30,14 @@ public class Player : MonoBehaviour
         if (Life > 0)
         {
             CheckInput();
+        }
+        else if (isAlive == false)
+        {
+        DeathTimer += Time.deltaTime;
+        if (DeathTimer >= 0.12f)
+        {
+            SceneManager.LoadScene(4);
+        }
         }
         victory();
     }
@@ -83,6 +92,7 @@ public class Player : MonoBehaviour
         Life -= amount;
         if (Life <= 0)
         {
+            Cam.transform.parent = null;
             killMe();
         }
     }
@@ -101,11 +111,6 @@ public class Player : MonoBehaviour
         }
         isAlive = false;
         anim.SetTrigger("Death");
-        DeathTimer += Time.deltaTime;
-        if (DeathTimer == 0.08f)
-        {
-            SceneManager.LoadScene(4);
-        }
         //Debug.Log("killMe");
     }
 

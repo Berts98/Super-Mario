@@ -18586,15 +18586,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb1ee98a94c737459c4bf0616cff415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Life: 2
+  Life: 1
   MovementSpeed: 0.08
   Coins: 0
+  MaxCoins: 10
   JumpForce: 200
   isGrounded: 1
   rb: {fileID: 1990797819}
   anim: {fileID: 1115810474}
   StartEdge: {x: -4, y: 0, z: 0}
   EndEdge: {x: 10.4, y: 0, z: 0}
+  Toad: {fileID: 0}
+  CoinValue: {fileID: 0}
+  Timer: 0
+  DeathTimer: 0
+  Cam: {fileID: 1883871956}
 --- !u!61 &1990797818
 BoxCollider2D:
   m_ObjectHideFlags: 0
