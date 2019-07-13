@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
     public float Timer = 0f;
     public float DeathTimer = 0f;
     public Camera Cam;
+    public GameObject GameOverPanel;
 
     // Update is called once per frame
     void Update()
@@ -30,14 +31,6 @@ public class Player : MonoBehaviour
         if (Life > 0)
         {
             CheckInput();
-        }
-        else if (isAlive == false)
-        {
-        DeathTimer += Time.deltaTime;
-        if (DeathTimer >= 0.12f)
-        {
-            SceneManager.LoadScene(4);
-        }
         }
         victory();
     }
@@ -95,6 +88,7 @@ public class Player : MonoBehaviour
             Cam.transform.parent = null;
             killMe();
         }
+        GameOverPanel.SetActive(true);
     }
 
     public void Coin(int amount)
@@ -116,18 +110,22 @@ public class Player : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "EndLevel" && Coins == MaxCoins && isGrounded == true)
+        if (collision.tag == "EndLevel" && isGrounded == true)
         {
             Toad.SetActive(true);
+        }
+        if (collision.tag == "EndLevel1")
+        {
+            SceneManager.LoadScene(3);
         }
     }
 
     public void victory()
     {
-        if (Toad.activeSelf == true)
+        if (Toad.activeInHierarchy == true)
         {
             Timer += Time.deltaTime;
-            if (Timer == 0.12f)
+            if (Timer >= 2f)
             {
                 SceneManager.LoadScene(3);
             } 

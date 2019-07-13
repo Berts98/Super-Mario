@@ -12,6 +12,7 @@ public class UnderDeath : MonoBehaviour
             // allora è un player
             player.killMe();
             other.collider.enabled = true;
+            player.GameOverPanel.SetActive(true);
         }
 
     }
